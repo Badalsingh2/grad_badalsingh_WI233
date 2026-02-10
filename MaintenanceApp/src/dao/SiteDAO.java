@@ -182,7 +182,7 @@ public class SiteDAO {
         }
     }
 
-    // ✅ Assign Site to Owner
+    // Assign Site to Owner
     public static void assignSiteToOwner(int siteId, int ownerId, String siteType) {
 
         try (Connection con = dbConnection.getConnection()) {

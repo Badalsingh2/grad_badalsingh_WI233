@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BikeRaceGame/BikeRaceGame.iml" filepath="$PROJECT_DIR$/BikeRaceGame/BikeRaceGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StreamAPI_Assignment/StreamAPI_Assignment.iml" filepath="$PROJECT_DIR$/StreamAPI_Assignment/StreamAPI_Assignment.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/grad_badalsingh_WI233.iml" filepath="$PROJECT_DIR$/.idea/grad_badalsingh_WI233.iml" />
       <module fileurl="file://$PROJECT_DIR$/MaintenanceApp/untitled.iml" filepath="$PROJECT_DIR$/MaintenanceApp/untitled.iml" />
     </modules>

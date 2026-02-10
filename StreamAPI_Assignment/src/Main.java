@@ -56,7 +56,7 @@ public class Main {
 
         // list.forEach(System.out::println);
 //        Employee size
-        System.out.println(list.size())
+        System.out.println(list.size());
 
 
     }

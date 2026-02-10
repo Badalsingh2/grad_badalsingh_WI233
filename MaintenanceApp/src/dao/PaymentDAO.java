@@ -7,7 +7,7 @@ import java.sql.*;
 
 public class PaymentDAO {
 
-    // ✅ Generate Pending Payment Record for All Sites
+    //  Generate Pending Payment Record for All Sites
     public static void generatePendingPayments() {
 
         try (Connection con = dbConnection.getConnection()) {
@@ -37,14 +37,14 @@ public class PaymentDAO {
                 ps.executeUpdate();
             }
 
-            System.out.println("✅ Pending Payments Generated Successfully!");
+            System.out.println("Pending Payments Generated Successfully!");
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    // ✅ View Pending Payment Report
+    // View Pending Payment Report
     public static void viewPendingPayments() {
 
         try (Connection con = dbConnection.getConnection()) {

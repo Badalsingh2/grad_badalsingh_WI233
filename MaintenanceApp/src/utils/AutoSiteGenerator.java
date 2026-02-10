@@ -23,6 +23,6 @@ public class AutoSiteGenerator {
             SiteDAO.insertSite(siteNumber++, 30, 40);
         }
 
-        System.out.println("✅ 35 Sites Generated Successfully!");
+        System.out.println(" 35 Sites Generated Successfully!");
     }
 }
