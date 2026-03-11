@@ -1,0 +1,60 @@
+<h2>Student List</h2>
+
+<!-- ADMIN ONLY BUTTON -->
+<div *ngIf="role === 'ADMIN'">
+  <button (click)="showForm=true">Add New Student</button>
+</div>
+
+<div *ngIf="showForm && role === 'ADMIN'">
+  <h3>{{editIndex === -1 ? 'Add Student' : 'Edit Student'}}</h3>
+  <form (ngSubmit)="saveStudent()">
+     Reg No:
+    <input type="number" [(ngModel)]="student.regNo" name="regNo"><br><br>
+
+    Roll No:
+    <input type="number" [(ngModel)]="student.rollNo" name="rollNo"><br><br>
+
+    Name:
+    <input type="text" [(ngModel)]="student.name" name="name"><br><br>
+
+    Standard:
+    <input type="number" [(ngModel)]="student.standard" name="standard"><br><br>
+
+    School:
+    <input type="text" [(ngModel)]="student.school" name="school"><br><br>
+
+    <button type="submit">Save Student</button>
+    <button type="button" (click)="cancelForm()">Cancel</button>
+  </form>
+</div>
+
+<table border="1">
+
+  <tr>
+    <th>Reg No</th>
+    <th>Roll No</th>
+    <th>Name</th>
+    <th>Standard</th>
+    <th>School</th>
+
+    <!-- Delete column only for ADMIN -->
+    <th *ngIf="role === 'ADMIN'">Actions</th>
+  </tr>
+
+  <tr *ngFor="let s of students; let i = index">
+
+    <td>{{s.regNo}}</td>
+    <td>{{s.rollNo}}</td>
+    <td>{{s.name}}</td>
+    <td>{{s.standard}}</td>
+    <td>{{s.school}}</td>
+
+    <!-- Delete button only visible to ADMIN -->
+    <td *ngIf="role === 'ADMIN'">
+      <button (click)="editStudent(i)">Edit</button>
+      <button (click)="deleteStudent(i)">Delete</button>
+    </td>
+
+  </tr>
+
+</table>
