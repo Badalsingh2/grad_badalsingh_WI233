@@ -103,11 +103,11 @@ Example:
 * Add Student Form
 * Student List Page
 
-```
-/screenshots/dashboard.png
-/screenshots/login.png
-/screenshots/students.png
-```
+
+![Dashboard](screenshots/dashboard.png)
+![login](screenshots/login.png)
+![Student-list](screenshots/students.png)
+
 
 ---
 
